@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  font-family: 'Poppins';
+  font-size: 2;
+  text-align:center;
+  padding: 2px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+div.info {
+    font-size: 2em;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+span.name {
+    color: #BFC1C2;
+}
+span.surename {
+    color: #000000;
+}
+.hobby {font-family: 'Poppins';
+  font-size: 2;
+  text-align:center;
+  padding: 2px;
+  text-transform: uppercase;
+  font-style: italic;
+
+
+}
+.Hinfo {font-size: 2em;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: left;
+    text-transform:lowercase;
+}
+/* ul {
+    display:flex;  
+    list-style:none;
+    text-align: center;
+} */
+</style>
+
+<body>
+
+<div class="header">
+  <h1>PROFILE</h1>
+</div>
+
+<div class='info'>
+<p><span class='name'>Isa</span><span class='surename'>Phuyuthanon</span>  ,  Bangkok TH</p>
+</div>
+
+<div class='hobby'>
+    <h1>Hobbies</h1>
+</div>
+
+
+<div class='Hinfo'>
+    <p>
+        <ul>
+            <li>Travel</li>  
+            <li>swimming</li>  
+            <li>Coding</li>  
+            <li>meeting new people!</li>
+        </ul>
+    </p>
+</div>
+
+<div class="row"> 
+  <div class="column">
+    <img src="1.jpg" style="width:100%">
+    <img src="2.jpg" style="width:100%">
+    <img src="3.jpg" style="width:100%">
+    <img src="4.jpg" style="width:100%">
+    <img src="5.jpg" style="width:100%">
+    <img src="6.jpg" style="width:100%">
+    <img src="7.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="8.jpg" style="width:100%">
+    <img src="7.jpg" style="width:100%">
+    <img src="6.jpg" style="width:100%">
+    <img src="5.jpg" style="width:100%">
+    <img src="4.jpg" style="width:100%">
+    <img src="3.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="4.jpg" style="width:100%">
+    <img src="8.jpg" style="width:100%">
+    <img src="2.jpg" style="width:100%">
+    <img src="1.jpg" style="width:100%">
+    <img src="5.jpg" style="width:100%">
+    <img src="4.jpg" style="width:100%">
+    <img src="2.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="2.jpg" style="width:100%">
+    <img src="1.jpg" style="width:100%">
+    <img src="6.jpg" style="width:100%">
+    <img src="5.jpg" style="width:100%">
+    <img src="8.jpg" style="width:100%">
+    <img src="1.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
