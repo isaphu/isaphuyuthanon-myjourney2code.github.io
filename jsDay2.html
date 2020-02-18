@@ -1,0 +1,62 @@
+<script src=jsDay2.js></script>
+
+<script>
+    let userName = prompt("Please put your username", '');
+
+if (userName == 'Admin') {
+
+  let pass = prompt('Please put your password', '');
+
+  if (pass == 'codecamp#5') {
+    alert( 'ยินดีต้อนรับ' );
+  } else if (pass == '' || pass == null) {
+    alert( 'ยกเลิก' );
+  } else {
+    alert( 'รหัสผิด' );
+  }
+
+} else if (userName == '' || userName == null) {
+  alert( 'ยกเลิก' );
+} else {
+  alert( "เราไม่รู้จักคุณ" );
+}
+</script>
+
+<script>
+let i = 3;
+
+while (i) {
+  alert( i-- );
+}
+</script>
+
+<script> 
+let browser = "Edge";   
+
+if (browser = "Edge") {
+      console.log( "You've got the Edge!" ); 
+} else if (browser = "Chrome") {
+      console.log("Okay we support these browsers too");
+} else if (browser = "Firefox") {
+    console.log("Okay we support these browsers too");
+} else if (browser = "Safari") {
+    console.log("Okay we support these browsers too");
+} else if (browser="Opera") {
+    console.log("Okay we support these browsers too");
+} else {
+    console.log("We hope that this page looks ok!");
+}
+</script>
+
+<script>
+function draw(n){
+    let str = " "
+    for(let i = 0; i < n; i++) {
+       str += "*"
+    }
+    console.log(str);
+}
+draw(20)
+</script>
+
+
