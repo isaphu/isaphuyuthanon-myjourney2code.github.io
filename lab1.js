@@ -1,17 +1,15 @@
-const myHistory = {
-    name: 'Isa',
-    age: 25,
-    height: 200,
-    weight: 250,
-}
+let user = {
+    name: 'John',
+    go: function () {alert(this.name)}
+};
+(user.go)()
 
-let myFuture = {};
+function makeUser() {
+    return {
+        name: 'John',
+        ref: this
+    };
+};
+let user = makeUser();
 
-   for (let key in myHistory) {
-
-       myFuture[key] = myHistory[key];
-   }
-
-   myFuture.name = "Phuyuthanon";
-
-   alert(myFuture.name);
+alert(user.ref.name);
