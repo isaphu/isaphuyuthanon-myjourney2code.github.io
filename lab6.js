@@ -1,5 +1,18 @@
-function multiplyNumeric(obj,times) {
-    for (let key in obj) {
-        if (typeof (obj[key]))
-    }
+function User(name) {
+    this.name = name;
 }
+    this.sayHi = function() {
+        alert( 'My name is: ' + this.name);
+    };
+
+function User(name) {
+  this.name = name;
+
+  this.sayHi = function() {
+    alert( "My name is: " + this.name );
+  };
+}
+
+let john = new User("John");
+
+john.sayHi();
