@@ -1,16 +1,21 @@
-let obj = {
-    sayHi() {
-        alert('Hello')
-    },
-    sayGoodbye () {
-        aler ("Good Bye")
-    }
-}
-console.log(sayHi)
+function Calculator() {
 
-let obj1 = {
-    name: 'Nat',
-    sayHi() {
-
+    this.read = function() {
+      this.a = +prompt('a?', 0);
+      this.b = +prompt('b?', 0);
+    };
+    
+    this.sum = function() {
+      return this.a + this.b;
+    };
+    
+    this.mul = function() {
+      return this.a * this.b;
+    };
     }
-}
+    
+    let calculator = new Calculator();
+    calculator.read();
+    
+    alert( "Sum=" + calculator.sum() );
+    alert( "Mul=" + calculator.mul() );
