@@ -1,23 +1,20 @@
-//1
+let calculator = {
+    read () {
+        this.key1 = +prompt('Insert your decimal:');
+        this.key2 = +prompt('Insert your integer:');
+        return this
+    },
 
-const obj = {
-    name: "Sonter",
-    surname: "Pakorn",
+    sum () {
+        this.key1 + this.key2;
+        return this
+    },
+
+    mul () {
+        this.key1 * this.key2;
+        return this
+    }
 };
-
-const obj2 = {
-    name: "Boy",
-}
-
-Object.assign(obj, obj2);
-
-console.log(obj);
-console.log(obj2);
-
-//or
-
-const obj = {
-    name: "Sonter"
-};
-obj.name = "Boy";
-
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );

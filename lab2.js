@@ -1,24 +1,13 @@
-const obj = {
-    name: 'sonter',
-    age: 18,
-    height: 196,
-    weight: 70,
-}
+let calculator = {
+    key1 = 2,
+    key2 = 5,
+function read() {
+    prompt( calculator.sum(read.key1.key2))
+    prompt( calculator.mul(read.key1.key2));
+};
+    
+};
 
-const obj2 = {
-    name: 'Nat',
-    weight: 98,
-}
-
-const obj3 = {
-    name: "Tle",
-    skill: "Node.js"
-}
-
-Object.assign(obj, obj2, obj3);
-
-console.log(obj);
-
-console.log(obj2);
-
-console.log(obj3)
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
