@@ -1,11 +1,4 @@
-function user(name,isAdmin,skill) {
-    this.name = name,
-    this.isAdmin = isAdmin,
-    this.skill = skill,
-};
-
-let user = new user('Nat, true, JS');
-let user1 = new user('Tle, false, Python');
-
-console.log(user);
-console.log(user1);
+function extractCurrencyValue(str,rate) {
+    return Number(str.slice(1)) * rate;
+ }
+ console.log(extractCurrencyValue('$120', 30.5))
