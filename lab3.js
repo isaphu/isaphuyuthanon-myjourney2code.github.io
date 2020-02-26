@@ -1,20 +1,5 @@
-let calculator = {
-    read () {
-        this.key1 = +prompt('Insert your decimal:');
-        this.key2 = +prompt('Insert your integer:');
-        return this
-    },
+function checkSpam(str) {
+    str = str.toLowerCase();
+    return str.includes  ('XXX') || str.includes('viagra');
+}
 
-    sum () {
-        this.key1 + this.key2;
-        return this
-    },
-
-    mul () {
-        this.key1 * this.key2;
-        return this
-    }
-};
-calculator.read();
-alert( calculator.sum() );
-alert( calculator.mul() );
