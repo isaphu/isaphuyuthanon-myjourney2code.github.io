@@ -1,18 +1,6 @@
-function User(name) {
-    this.name = name;
-}
-    this.sayHi = function() {
-        alert( 'My name is: ' + this.name);
-    };
+let fruits = ["Apples", "Pear", "Orange"];
 
-function User(name) {
-  this.name = name;
+let shoppingCart = fruits;
+shoppingCart.push("Banana");
 
-  this.sayHi = function() {
-    alert( "My name is: " + this.name );
-  };
-}
-
-let john = new User("John");
-
-john.sayHi();
+alert( fruits.length );

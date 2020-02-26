@@ -1,13 +1,19 @@
-function Accumulator(startingValue) {
-    this.value = startingValue;
-    this.read = function () {
-        this.value += Number(prompt('Adding Number'));
+// function sumInput() {
+//     let a = prompt('Input your value:')
+//     for {
+// }
+
+function sumInput() {
+    let numbers = [];
+    while (true) {
+        let value = prompt("Input your number:", 0);
+        if (value === "" || value === null || !isFinite(value)) break;
+        numbers.push(+value);
     }
+    let sum = 0;
+    for (let number of numbers) {
+        sum += number;
+    }
+    return sum;
 }
-let acc = new Accumulator(4);
-
-console.log(acc.value);
-
-acc.read();
-
-console.log(acc.value);
+alert(sumInput());
