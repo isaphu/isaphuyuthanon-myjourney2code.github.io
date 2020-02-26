@@ -1,15 +1,18 @@
-let user = {
-    name: 'John',
-    go: function () {alert(this.name)}
-};
-(user.go)()
+function myMath () {
+    let myMath = 2
+    return Math.random(1,5);
+}
+console.log(Math.random(myMath * 100));
 
-function makeUser() {
-    return {
-        name: 'John',
-        ref: this
-    };
-};
-let user = makeUser();
+function  myMath (min,max) {
+    return(Math.floor(Math.random(1,5)))
+}
 
-alert(user.ref.name);
+function myMath (min, max) {
+    let num = Math.random() * (max - min) + min;
+
+    return num.toFixed(2)
+  }
+
+console.log(myMath(8,10))
+
