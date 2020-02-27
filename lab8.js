@@ -1,19 +1,8 @@
-// function sumInput() {
-//     let a = prompt('Input your value:')
-//     for {
-// }
-
-function sumInput() {
-    let numbers = [];
-    while (true) {
-        let value = prompt("Input your number:", 0);
-        if (value === "" || value === null || !isFinite(value)) break;
-        numbers.push(+value);
-    }
-    let sum = 0;
-    for (let number of numbers) {
-        sum += number;
-    }
-    return sum;
-}
-alert(sumInput());
+let array1 = [
+    { name: "apple", surname: "London" },
+    { name: "banana", surname: "Bangkok" },
+    { name: "watermelon", surname: "Singapore" },
+  ]
+//   array2 ["apple London", "banana Bangkok", "watermelon Singapore"]
+let array2 = array1.map(item => item.name + " " + item.surname);
+console.log(array2)
