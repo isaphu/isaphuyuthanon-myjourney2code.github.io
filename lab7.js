@@ -1,8 +1,11 @@
-let array1 = [
-    { name: "apple", age: 14 },
-    { name: "banana", age: 18 },
-    { name: "watermelon", age: 32 },
-  ]
+let styles = ["Jazz", "Blue"];
+console.log(styles)
+styles.push("Rock-n-Roll");
+console.log(styles)
+styles[1] = "Classic";
+console.log(styles)
+styles.shift();
+console.log(styles)
+styles.unshift("Rap","Raggae");
+console.log(styles)
 
-let array2 = array1.map(item => item.age)
-console.log(array2)

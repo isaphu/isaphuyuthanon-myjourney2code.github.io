@@ -1,3 +1,4 @@
-let array1 = ["apple", "banana", "orange"];
-let array2 = array1.map(item => item.toUpperCase());
-console.log(array2) 
+function extractCurrencyValue(str,rate) {
+    return Number(str.slice(1)) * rate;
+ }
+ console.log(extractCurrencyValue('$120', 30.5))

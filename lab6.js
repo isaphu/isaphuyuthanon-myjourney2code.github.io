@@ -1,9 +1,6 @@
-let array1 = [
-    { name: "apple", age: 14 },
-    { name: "banana", age: 18 },
-    { name: "watermelon", age: 32 },
-  ]
+let fruits = ["Apples", "Pear", "Orange"];
 
-let array2 = array1.map(item => item.name)
+let shoppingCart = fruits;
+shoppingCart.push("Banana");
 
-console.log(array2)
+alert( fruits.length );

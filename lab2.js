@@ -1,4 +1,4 @@
-let array1 = [1,2,30,400];
-let array2 = array1.map(item => 2*(item));
-console.log(array2)
-
+function ucFirst(str) {
+    return str[0]+str[1].toUpperCase() + str.slice(2);
+} 
+console.log( ucFirst('isa') );
